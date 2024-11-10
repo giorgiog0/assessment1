@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        /* Basic styling for navigation bar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #2a9d8f;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #264653;
+        }
+        
+        /* Dropdown menu styling */
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #264653;
+            min-width: 150px;
+            top: 100%;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #1d3557;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#shop">Shop</a>
+                <div class="dropdown-content">
+                    <a href="#green-tea">Green Tea</a>
+                    <a href="#black-tea">Black Tea</a>
+                    <a href="#herbal-tea">Herbal Tea</a>
+                    <a href="#accessories">Accessories</a>
+                </div>
+            </li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#sustainability">Sustainability</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
